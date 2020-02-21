@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cambay:400,700&display=swap');
 
 :root {
     --main-color: #1f4c14;
@@ -51,7 +52,6 @@ header nav .menu a {
   color: var(--main-color);
   background: #cbfa86;
   padding: 1ex;
-  border: 0  block;
 }
 
 header nav .menu a:hover {
@@ -85,33 +85,76 @@ header nav p {
     height: 50px;
 }
 
-h2 {
+#articles h2,
+#events h2,
+#contacts h2 {
     font-size: 3.5rem;
     text-transform: uppercase;
     text-align: center;
     color: var(--main-color);
     font-family: 'Playfair Display SC', bold;
     margin: 1ex;
+    margin-top: 4ex;
     padding: 0;
 }
 
+.box {
+    float: right; 
+    border: transparent;
+    border-radius: 30px 30px 30px 30px;
+    padding: 0;
+    margin: 25px 50px 0 0;
+    background: #fff;
+   }
+   
+.box p  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cambay', sans-serif;
+    background-color: #fff;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0 auto;
+   }
 
-#articles img,
-#events img {
+.box img {
     border-radius: 30px 30px 0px 0px;
     max-width: 250px;
     max-height: 250px;
 }
 
-#articles p,
-#events p {
-    border-radius: 0px 0px 30px 30px;
-    opacity: 1;
-    background-color: #ffffff;
-    font-size: 23px;
-    max-width: 230px;
-    max-height: 230px;
-    padding: 20px;
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div .button {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 .footer {
@@ -119,9 +162,10 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     margin: 1ex;
+    margin-bottom: 10ex;
 }
 
-section a img {
+div a img {
     max-width: 100px;
     max-height: 100px;
 }
