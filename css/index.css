@@ -12,6 +12,13 @@ body {
     margin: auto;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+
 .logo {
     font-size: 5rem;
     text-transform: uppercase;
@@ -32,7 +39,7 @@ body {
 
 h1, h2, p, section, header, main,
 footer {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -43,6 +50,7 @@ header nav .menu {
     list-style-type: none;
     justify-content: space-around;
     background: #cbfa86;
+    margin: 15px auto;
 }
 
 header nav .menu a {
@@ -50,8 +58,10 @@ header nav .menu a {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--main-color);
+  float: left;
+  border: 1px solid #91d855;
   background: #cbfa86;
-  padding: 1ex;
+  padding: 1ex 12ex;
 }
 
 header nav .menu a:hover {
@@ -85,9 +95,7 @@ header nav p {
     height: 50px;
 }
 
-#articles h2,
-#events h2,
-#contacts h2 {
+.headsection h2 {
     font-size: 3.5rem;
     text-transform: uppercase;
     text-align: center;
@@ -106,11 +114,16 @@ header nav p {
     margin: 25px 50px 0 0;
     background: #fff;
    }
+
+.box a {
+    text-decoration: none;
+}
+
+.box:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
    
 .box p  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Cambay', sans-serif;
     background-color: #fff;
     font-size: 20px;
@@ -126,35 +139,64 @@ header nav p {
     max-height: 250px;
 }
 
-input[type=text] {
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+#contacts {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+
+.formImg {
+    max-width: 409px;
+    margin: 0 40.5px;
+    border-radius: 30px 0 0 30px;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+input[type=textName] {
+    width: 409px;
+    height: 81px;
+    border: none;
+    border-radius: 0 30px 0 0;
+    margin: 0 11.5px;
 }
 
-div .button {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+input[type=textAddress] {
+    width: 409px;
+    height: 81px;
+    border: none;
+    border-radius: 0;
+    margin: 11.5px;
+}
+
+input[type=textMessage] {
+    width: 409px;
+    height: 125px;
+    border: none;
+    border-radius: 0;
+    margin: 11.5px; 
+}
+
+input::placeholder{
+    font-size: 20px;
+    font-family: 'Cambay';
+}
+
+input:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+    border-style outset;
+    width: 409px;
+    height: 81px;
+    background-color: #cecece;
+    border: none;
+    border-radius: 0 0 30px 0;
+    margin: 0 11.5px;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .footer {
@@ -168,4 +210,10 @@ div .button {
 div a img {
     max-width: 100px;
     max-height: 100px;
+}
+
+.clock {
+    color: #1f4c14;
+    font-size: 40px;
+    font-family: 'Playfair Display SC', bold;
 }

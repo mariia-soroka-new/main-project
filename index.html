@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ZERO WASTE UKRAINE</title>
+    <link rel="shortcut icon" href="img/eco.ico" />
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -12,6 +13,7 @@
     <nav>
         <h1 class="logo">ZERO WASTE UKRAINE</h1>
         <h1 class="under-logo">ECO COMUNITY</h1>
+        <div class="clock"></div>
              <ul class="menu">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#articles">ARTICLES</a></li>
@@ -25,12 +27,16 @@
     </nav>
     </header>
     <main>
-        <section id="articles">
+        <section class="headsection">
             <h2>ARTICLES</h2>
+        </section>
+        <section id="articles">
             <div class="box">
+            <a href="zero-waste-how-to-start.html">
             <img src="img/plastic-sucks-eco-bag.jpg"
                  alt="eco bag 'plastic sucks'">
-            <p>Zero waste. How to start. Detailed tips for those who want to be ECO now and here...<a href="zero-waste-how-to-start.html">READING   →</a></p>
+            <p>Zero waste. How to start. Detailed tips for those who want to be ECO now and here... READING   →</p>
+            </a>
             </div>
             <div class="box">
             <img src="img/sorting-waste.jpg"
@@ -43,8 +49,10 @@
             <p>Minimalistic life. How to contribute less. Where you can give a new life for the old things... READING   →</p>
             </div>
         </section>
-        <section id="events">
+        <section class="headsection">
             <h2>EVENTS</h2>
+        </section>
+        <section id="events">
             <div class="box">
             <img src="img/zero-waste-equipment.jpg"
                  alt="zero waste equipment for kitchen and bathroom">
@@ -66,25 +74,29 @@
             <p>Annual ECO fair with experienced lectors... READING   →</p>
             </div>
         </section>
-        <section id="contacts">
+        <section class="headsection">
             <h2>CONTACTS</h2>
-            <img src="img/eco-table.jpg"
+        </section>
+        <section id="contacts">
+            <img class="formImg" src="img/eco-table.jpg"
                  alt="zero waste products on the table">
             <form action="https://formspree.io/xjvwkqnp" method="POST">
-               <input type="text" placeholder="Your name" name="Your name">
+               <input type="textName" placeholder="Your name" name="Your name">
                <br>
-               <input type="text" placeholder="Your address" name="Your address">
+               <input type="textAddress" placeholder="Your address" name="Your address">
                <br>
-               <input type="text" placeholder="Your message" name="Your message">
+               <input type="textMessage" placeholder="Your message" name="Your message">
                <br>
                <div class="button">
                <button type="submit">SEND</button>
                </div>
             </form>
-        </div>
-        <h2>YOU CAN ALSO FIND US</h2>
+        </section>
+        <section class="headsection">
+            <h2>YOU CAN ALSO FIND US</h2>
+        </section>
         <div class="footer">
-             <a   href="https://www.twitter.com"
+             <a  href="https://www.twitter.com"
                  target="_blank">
              <img src="img/twitter.png"
                  alt="twitter icon">
@@ -105,5 +117,6 @@
                  alt="GO UP">
             </a>
     </main>
+    <script src="js/index.js"></script>
 </body>
 </html>
