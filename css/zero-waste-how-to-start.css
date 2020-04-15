@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cambay:400,700&display=swap');
+
+:root {
+    --main-color: #1f4c14;
+    font-family: 'Playfair Display SC';
+}
+
+body {
+    background-color: #dbffbb;
+    max-width: 980px;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.logo {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    font-family: 'Playfair Display SC', bold;
+}
+
+.under-logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    font-family: 'Playfair Display SC';
+    margin: auto;
+    padding: 0;
+}
+
+nav a {
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main-color);
+  float: left;
+  border: 1px solid #91d855;
+  background: #cbfa86;
+  padding: 1ex 12ex;
+}
+
+nav a:hover {
+    background: #91d855;
+}
