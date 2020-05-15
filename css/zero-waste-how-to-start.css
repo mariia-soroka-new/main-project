@@ -37,6 +37,7 @@ main {
 
 nav a {
   display: flex;
+  align-content: center;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--main-color);
@@ -48,4 +49,9 @@ nav a {
 
 nav a:hover {
     background: #91d855;
+}
+
+section p {
+    font-size: 1.25rem;
+    font-family: 'Cambay';
 }
